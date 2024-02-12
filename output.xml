@@ -1,83 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.8.10 on linux)" generated="2024-02-09T18:04:16.718420" rpa="false" schemaversion="5">
-<suite id="s1" name="Go to Products" source="/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Test_Cases/Web/Go_to_Products.robot">
-<test id="s1-t1" name="Go to Products" line="6">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-02-09T18:04:16.982322" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-02-09T18:04:16.985107" level="FAIL">No browser is open.</msg>
-<arg>${Products}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-02-09T18:04:16.978280" elapsed="0.010806">No browser is open.</status>
+<robot generator="Robot 7.0 (Python 3.8.10 on linux)" generated="2024-02-12T17:43:15.664636" rpa="false" schemaversion="5">
+<suite id="s1" name="Open website" source="/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Test_Cases/Web/Open_website.robot">
+<test id="s1-t1" name="Open Website Test Case" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-12T17:43:15.894577" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/Admin'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<arg>executable_path=/usr/bin/chromedriver</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-12T17:43:15.893214" elapsed="10.849489"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${Products}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-02-09T18:04:16.991832" elapsed="0.000486"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-12T17:43:26.747476" elapsed="0.197893"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-12T17:43:27.232375" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="NOT RUN" start="2024-02-09T18:04:16.994745" elapsed="0.000536"/>
+<status status="PASS" start="2024-02-12T17:43:26.947588" elapsed="0.285740"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-12T17:43:27.238433" level="INFO">${screenshot_path} = /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Open.png</msg>
 <var>${screenshot_path}</var>
-<arg>/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Products.png</arg>
+<arg>/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Open.png</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2024-02-09T18:04:16.997193" elapsed="0.000455"/>
+<status status="PASS" start="2024-02-12T17:43:27.237569" elapsed="0.001226"/>
 </kw>
 <kw name="Save Screenshot" owner="Save_ss">
+<msg time="2024-02-12T17:43:27.429159" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Web/Open.png"&gt;&lt;img src="Results/Web/Open.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-12T17:43:27.430150" level="INFO">Screenshot saved at: /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Open.png</msg>
 <arg>${screenshot_path}</arg>
-<status status="NOT RUN" start="2024-02-09T18:04:16.998657" elapsed="0.000335"/>
+<status status="PASS" start="2024-02-12T17:43:27.239620" elapsed="0.191422"/>
 </kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<arg>window.scrollBy(0,800)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="NOT RUN" start="2024-02-09T18:04:16.999803" elapsed="0.000694"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Next_page}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2024-02-09T18:04:17.001577" elapsed="0.000364"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${Next_page}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-02-09T18:04:17.002959" elapsed="0.000396"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Wait_for}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2024-02-09T18:04:17.004991" elapsed="0.000772"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${Prev_page}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2024-02-09T18:04:17.007294" elapsed="0.000532"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<arg>window.scrollBy(0,800)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="NOT RUN" start="2024-02-09T18:04:17.010917" elapsed="0.000538"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${Prev_page}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-02-09T18:04:17.012668" elapsed="0.000343"/>
-</kw>
-<doc>Open the website in a web browser</doc>
-<status status="FAIL" start="2024-02-09T18:04:16.973412" elapsed="0.040636">No browser is open.</status>
+<status status="PASS" start="2024-02-12T17:43:15.890403" elapsed="11.545548"/>
 </test>
-<status status="FAIL" start="2024-02-09T18:04:16.725135" elapsed="0.290843"/>
+<status status="PASS" start="2024-02-12T17:43:15.671316" elapsed="11.771342"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Go to Products">Go to Products</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Open website">Open website</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-02-12T17:43:15.831776" level="ERROR">Error in file '/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Config/Settings.robot' on line 2: Invalid resource file extension '.py'. Supported extensions are '.json', '.resource', '.rest', '.robot', '.rsrc', '.rst', '.tsv' and '.txt'.</msg>
 </errors>
 </robot>

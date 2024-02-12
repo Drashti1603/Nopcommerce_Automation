@@ -1,5 +1,5 @@
 *** Settings ***
-Library    /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Utilities/Helper_Functions.py
+Resource   /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Utilities/Helper_Functions.py
 
 ## WEB
 Library    Screenshot
