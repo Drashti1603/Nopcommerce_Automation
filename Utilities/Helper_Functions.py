@@ -8,4 +8,4 @@ def open_website(url):
 
         """Open the website in a web browser."""
         selenium_lib = BuiltIn().get_library_instance('SeleniumLibrary')
-        selenium_lib.open_browser(url, "Google Chrome")
+        selenium_lib.open_browser(url, "Firefox")
