@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.10 on linux)" generated="2024-02-12T15:54:35.761121" rpa="false" schemaversion="5">
+<suite id="s1" name="Open website &amp; Login &amp; Catalog &amp; Go to Attributes &amp; Go to Checkout-Attributes">
+<suite id="s1-s1" name="Open website" source="/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Test_Cases/Web/Open_website.robot">
+<test id="s1-s1-t1" name="Open Website Test Case" line="6">
+<kw name="Open Flipkart Website" owner="Helper_Functions">
+<msg time="2024-02-12T15:54:36.001143" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/Admin'.</msg>
+<arg>${url}</arg>
+<doc>Open the website in a web browser.</doc>
+<status status="PASS" start="2024-02-12T15:54:36.000725" elapsed="2.863388"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-12T15:54:38.865657" elapsed="0.115522"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:39.171744" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-662.png"&gt;&lt;img src="selenium-screenshot-662.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-02-12T15:54:38.983822" elapsed="0.188152"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-12T15:54:39.173103" level="INFO">${screenshot_path} = /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Open.png</msg>
+<var>${screenshot_path}</var>
+<arg>/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Open.png</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-12T15:54:39.172566" elapsed="0.000621"/>
+</kw>
+<kw name="Save Screenshot" owner="Save_ss">
+<msg time="2024-02-12T15:54:39.316643" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Results/Web/Open.png"&gt;&lt;img src="../../Results/Web/Open.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-12T15:54:39.316750" level="INFO">Screenshot saved at: /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Open.png</msg>
+<arg>${screenshot_path}</arg>
+<status status="PASS" start="2024-02-12T15:54:39.173753" elapsed="0.143123"/>
+</kw>
+<doc>Open the website in a web browser</doc>
+<status status="PASS" start="2024-02-12T15:54:35.999200" elapsed="3.318062"/>
+</test>
+<status status="PASS" start="2024-02-12T15:54:35.787145" elapsed="3.530961"/>
+</suite>
+<suite id="s1-s2" name="Login" source="/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Test_Cases/Web/Login.robot">
+<test id="s1-s2-t1" name="Login to Website" line="6">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Login_button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-12T15:54:39.340927" elapsed="0.055271"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:39.397260" level="INFO">Clicking element '//*[@class="button-1 login-button"]'.</msg>
+<arg>${Login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T15:54:39.396737" elapsed="1.389776"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:42.186700" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-663.png"&gt;&lt;img src="selenium-screenshot-663.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-02-12T15:54:40.787100" elapsed="1.399794"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-12T15:54:42.188269" level="INFO">${screenshot_path} = /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Login.png</msg>
+<var>${screenshot_path}</var>
+<arg>/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Login.png</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-12T15:54:42.187746" elapsed="0.002833"/>
+</kw>
+<kw name="Save Screenshot" owner="Save_ss">
+<msg time="2024-02-12T15:54:42.437588" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Results/Web/Login.png"&gt;&lt;img src="../../Results/Web/Login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-12T15:54:42.437676" level="INFO">Screenshot saved at: /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Login.png</msg>
+<arg>${screenshot_path}</arg>
+<status status="PASS" start="2024-02-12T15:54:42.191395" elapsed="0.246378"/>
+</kw>
+<doc>Open the website in a web browser</doc>
+<status status="PASS" start="2024-02-12T15:54:39.339899" elapsed="3.098254"/>
+</test>
+<status status="PASS" start="2024-02-12T15:54:39.319036" elapsed="3.119830"/>
+</suite>
+<suite id="s1-s3" name="Catalog" source="/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Test_Cases/Web/Catalog.robot">
+<test id="s1-s3-t1" name="Expand Catalog" line="6">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Catalog_hover}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-12T15:54:42.463764" elapsed="0.078491"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:42.543546" level="INFO">Clicking element '//*[contains(text(),'Catalog')]'.</msg>
+<arg>${Catalog_hover}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T15:54:42.542922" elapsed="0.165953"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:42.945449" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-664.png"&gt;&lt;img src="selenium-screenshot-664.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-02-12T15:54:42.709532" elapsed="0.236213"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-12T15:54:42.947296" level="INFO">${screenshot_path} = /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/catalog_expands.png</msg>
+<var>${screenshot_path}</var>
+<arg>/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/catalog_expands.png</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-12T15:54:42.946772" elapsed="0.000621"/>
+</kw>
+<kw name="Save Screenshot" owner="Save_ss">
+<msg time="2024-02-12T15:54:43.150898" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Results/Web/catalog_expands.png"&gt;&lt;img src="../../Results/Web/catalog_expands.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-12T15:54:43.150985" level="INFO">Screenshot saved at: /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/catalog_expands.png</msg>
+<arg>${screenshot_path}</arg>
+<status status="PASS" start="2024-02-12T15:54:42.948254" elapsed="0.202807"/>
+</kw>
+<doc>Open the website in a web browser</doc>
+<status status="PASS" start="2024-02-12T15:54:42.462875" elapsed="0.688514"/>
+</test>
+<status status="PASS" start="2024-02-12T15:54:42.440071" elapsed="0.711900"/>
+</suite>
+<suite id="s1-s4" name="Go to Attributes" source="/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Test_Cases/Web/Go_to_Attributes.robot">
+<test id="s1-s4-t1" name="Go to Products" line="6">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Attributes}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-12T15:54:43.176733" elapsed="0.050982"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:43.228976" level="INFO">Clicking element '//*[contains(text(),'Attributes')]'.</msg>
+<arg>${Attributes}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T15:54:43.228367" elapsed="0.110487"/>
+</kw>
+<doc>Open the website in a web browser</doc>
+<status status="PASS" start="2024-02-12T15:54:43.175419" elapsed="0.164072"/>
+</test>
+<status status="PASS" start="2024-02-12T15:54:43.153300" elapsed="0.186885"/>
+</suite>
+<suite id="s1-s5" name="Go to Checkout-Attributes" source="/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Test_Cases/Web/Go_to_Checkout-Attributes.robot">
+<test id="s1-s5-t1" name="Go to Products" line="6">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Checkout_att}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-12T15:54:43.365343" elapsed="0.335201"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:43.701555" level="INFO">Clicking element '//*[contains(text(),' Checkout attributes')]'.</msg>
+<arg>${Checkout_att}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T15:54:43.701087" elapsed="0.717418"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:45.049218" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-665.png"&gt;&lt;img src="selenium-screenshot-665.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-02-12T15:54:44.419485" elapsed="0.629886"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-12T15:54:45.050110" level="INFO">${screenshot_path} = /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Checkout.png</msg>
+<var>${screenshot_path}</var>
+<arg>/home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Checkout.png</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-12T15:54:45.049761" elapsed="0.000409"/>
+</kw>
+<kw name="Save Screenshot" owner="Save_ss">
+<msg time="2024-02-12T15:54:45.231122" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Results/Web/Checkout.png"&gt;&lt;img src="../../Results/Web/Checkout.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-12T15:54:45.231208" level="INFO">Screenshot saved at: /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/Robot_Files/Nopcommerce_Automation/Results/Web/Checkout.png</msg>
+<arg>${screenshot_path}</arg>
+<status status="PASS" start="2024-02-12T15:54:45.050625" elapsed="0.180658"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:45.232146" level="INFO">Executing JavaScript:
+window.scrollBy(0,800)
+Without any arguments.</msg>
+<arg>window.scrollBy(0,800)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-02-12T15:54:45.231649" elapsed="0.005780"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:45.238276" level="INFO">Opening url 'https://admin-demo.nopcommerce.com/Admin/CheckoutAttribute/Create'</msg>
+<arg>${Add_new_Ca}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-12T15:54:45.237924" elapsed="0.645479"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:45.884731" level="INFO">Typing text 'Gift' into text field '//*[@data-val-required="Please provide a name."]'.</msg>
+<arg>${Prod_name}</arg>
+<arg>Gift</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T15:54:45.884076" elapsed="0.833038"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:46.718057" level="INFO">Clicking element '//*[@name="save"]'.</msg>
+<arg>${Save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T15:54:46.717631" elapsed="0.925523"/>
+</kw>
+<kw name="Click Checkbox And Delete" owner="Deletion">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${checkbox_locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-12T15:54:47.645519" elapsed="0.472546"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:48.118957" level="INFO">Clicking element '//*[@id="checkoutattributes-grid"]/tbody/tr/td[1]/input'.</msg>
+<arg>${checkbox_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T15:54:48.118510" elapsed="0.063645"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${delete_button_locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-12T15:54:48.182633" elapsed="0.026227"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-12T15:54:48.209488" level="INFO">Clicking element '//*[@id="delete-selected"]'.</msg>
+<arg>${delete_button_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-12T15:54:48.209164" elapsed="0.051804"/>
+</kw>
+<arg>${Checkbox_Ca}</arg>
+<arg>${Delete_Selected}</arg>
+<status status="PASS" start="2024-02-12T15:54:47.644171" elapsed="0.617021"/>
+</kw>
+<doc>Open the website in a web browser</doc>
+<status status="PASS" start="2024-02-12T15:54:43.364362" elapsed="4.897224"/>
+</test>
+<status status="PASS" start="2024-02-12T15:54:43.341769" elapsed="4.920529"/>
+</suite>
+<status status="PASS" start="2024-02-12T15:54:35.762252" elapsed="12.501701"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Open website &amp; Login &amp; Catalog &amp; Go to Attributes &amp; Go to Checkout-Attributes">Open website &amp; Login &amp; Catalog &amp; Go to Attributes &amp; Go to Checkout-Attributes</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Open website">Open website &amp; Login &amp; Catalog &amp; Go to Attributes &amp; Go to Checkout-Attributes.Open website</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Login">Open website &amp; Login &amp; Catalog &amp; Go to Attributes &amp; Go to Checkout-Attributes.Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Catalog">Open website &amp; Login &amp; Catalog &amp; Go to Attributes &amp; Go to Checkout-Attributes.Catalog</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="Go to Attributes">Open website &amp; Login &amp; Catalog &amp; Go to Attributes &amp; Go to Checkout-Attributes.Go to Attributes</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="Go to Checkout-Attributes">Open website &amp; Login &amp; Catalog &amp; Go to Attributes &amp; Go to Checkout-Attributes.Go to Checkout-Attributes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
