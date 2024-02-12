@@ -3,6 +3,9 @@ from robot.libraries.BuiltIn import BuiltIn
 from robot.api.deco import keyword
 from AppiumLibrary import AppiumLibrary
 from SeleniumLibrary import SeleniumLibrary
+from selenium import webdriver
+
+driver = webdriver.Chrome("/usr/bin/chromedriver")
 
 def open_website(url):
 
