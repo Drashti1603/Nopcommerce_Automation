@@ -5,7 +5,7 @@ Resource  /home/drashti/Documents/Android_Automation/robot-files/Web_Automation/
 *** Test Cases ***
 Open Website Test Case
     [Documentation]
-    Open Browser    ${url}   Firefox
+    Open Browser    ${url}   chrome   executable_path=/usr/bin/chromedriver
     Maximize Browser Window   
     SeleniumLibrary.Capture Page Screenshot
     ${screenshot_path} =        Set Variable         
